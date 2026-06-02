@@ -4,7 +4,12 @@ import { MapPin, Phone, Clock, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Contact() {
-  const whatsappMessage = encodeURIComponent("Hi Ideal Bakery! I have some inquiries about your products and would like to place an order.");
+  const message = `Hi Ideal Bakery! I have some inquiries about your products and would like to place an order.
+
+നമസ്കാരം ഐഡിയൽ ബേക്കറി! എനിക്ക് ചില വിവരങ്ങൾ അറിയാനും ഓർഡർ ചെയ്യാനും താല്പര്യമുണ്ട്.
+
+ನಮಸ್ಕಾರ ಐಡಿಯಲ್ ಬೇಕರಿ! ನಾನು ಕೆಲವು ಮಾಹಿತಿಯನ್ನು ತಿಳಿಯಲು ಮತ್ತು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ.`;
+  const whatsappMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMessage}`;
 
   return (
