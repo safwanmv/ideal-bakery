@@ -74,7 +74,10 @@ export default function Header() {
               </button>
               
               {isLangOpen && (
-                <div className="absolute top-full mt-2 right-0 bg-white border border-neutral-100 shadow-xl rounded-xl p-2 flex flex-col min-w-[120px] overflow-hidden">
+                <div className="absolute top-full mt-2 right-0 bg-white border border-neutral-100 shadow-xl rounded-xl p-2 flex flex-col min-w-[160px] overflow-hidden">
+                  <span className="text-xs font-semibold text-neutral-400 uppercase tracking-wider px-3 py-2 mb-1 border-b border-neutral-100">
+                    WhatsApp Chat Language
+                  </span>
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -133,7 +136,8 @@ export default function Header() {
               
               {/* Mobile Language Switcher */}
               <div className="pt-4 border-t border-neutral-100">
-                <p className="text-sm font-semibold text-neutral-500 mb-3">Select Language</p>
+                <p className="text-sm font-bold text-neutral-500 mb-1 uppercase tracking-wider">WhatsApp Chat Language</p>
+                <p className="text-xs text-neutral-400 mb-3">Choose the language for your direct messages</p>
                 <div className="grid grid-cols-3 gap-2">
                   {languages.map((lang) => (
                     <button
