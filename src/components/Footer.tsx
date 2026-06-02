@@ -96,10 +96,10 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-neutral-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 md:pb-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500 text-center md:text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500 text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} Ideal Bakery. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">
-            Designed & Developed by{" "}
+          <p className="mt-3 md:mt-0 leading-relaxed">
+            Designed & Developed by <br className="md:hidden" />
             <a 
               href="https://wa.me/917025849734?text=Hi%20Mohammed%20Safwan!%20I%20saw%20the%20Ideal%20Bakery%20website%20you%20designed%20and%20I%20am%20very%20impressed.%20I%20would%20love%20to%20discuss%20building%20a%20website%20like%20that%20for%20my%20business."
               target="_blank" 
