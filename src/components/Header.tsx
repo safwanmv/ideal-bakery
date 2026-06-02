@@ -2,12 +2,15 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Globe } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [isLangOpen, setIsLangOpen] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -21,6 +24,12 @@ export default function Header() {
     { name: "Menu", href: "#products" },
     { name: "Custom", href: "#custom-cakes" },
     { name: "Gallery", href: "#gallery" },
+  ];
+
+  const languages = [
+    { code: "EN", name: "English" },
+    { code: "ML", name: "മലയാളം" },
+    { code: "KN", name: "ಕನ್ನಡ" },
   ];
 
   return (
@@ -53,7 +62,35 @@ export default function Header() {
             ))}
           </nav>
 
-          <div className="hidden md:flex items-center">
+          <div className="hidden md:flex items-center space-x-4">
+            {/* Language Switcher */}
+            <div className="relative">
+              <button 
+                onClick={() => setIsLangOpen(!isLangOpen)}
+                className="flex items-center space-x-1 text-sm font-medium text-neutral-600 hover:text-foreground transition-colors px-2 py-1 rounded-md"
+              >
+                <Globe className="w-4 h-4" />
+                <span>{language}</span>
+              </button>
+              
+              {isLangOpen && (
+                <div className="absolute top-full mt-2 right-0 bg-white border border-neutral-100 shadow-xl rounded-xl p-2 flex flex-col min-w-[120px] overflow-hidden">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setLanguage(lang.code as "EN" | "ML" | "KN");
+                        setIsLangOpen(false);
+                      }}
+                      className={`text-left px-3 py-2 text-sm rounded-lg transition-colors ${language === lang.code ? "bg-primary/10 text-primary font-bold" : "hover:bg-neutral-50 text-neutral-600"}`}
+                    >
+                      {lang.name}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+
             <Link
               href="#contact"
               className="bg-foreground hover:bg-neutral-800 text-white px-6 py-2.5 rounded-full text-sm font-medium transition-all shadow-md hover:shadow-lg hover:scale-105 active:scale-95"

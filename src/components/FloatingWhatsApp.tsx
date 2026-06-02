@@ -2,14 +2,18 @@
 
 import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function FloatingWhatsApp() {
-  const message = `Hi Ideal Bakery! I have some inquiries about your products and would like to place an order.
+  const { language } = useLanguage();
 
-നമസ്കാരം ഐഡിയൽ ബേക്കറി! എനിക്ക് ചില വിവരങ്ങൾ അറിയാനും ഓർഡർ ചെയ്യാനും താല്പര്യമുണ്ട്.
+  const messages = {
+    EN: "Hi Ideal Bakery! I have some inquiries about your products and would like to place an order.",
+    ML: "നമസ്കാരം ഐഡിയൽ ബേക്കറി! എനിക്ക് ചില വിവരങ്ങൾ അറിയാനും ഓർഡർ ചെയ്യാനും താല്പര്യമുണ്ട്.",
+    KN: "ನಮಸ್ಕಾರ ಐಡಿಯಲ್ ಬೇಕರಿ! ನಾನು ಕೆಲವು ಮಾಹಿತಿಯನ್ನು ತಿಳಿಯಲು ಮತ್ತು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ."
+  };
 
-ನಮಸ್ಕಾರ ಐಡಿಯಲ್ ಬೇಕರಿ! ನಾನು ಕೆಲವು ಮಾಹಿತಿಯನ್ನು ತಿಳಿಯಲು ಮತ್ತು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ.`;
-
+  const message = messages[language as keyof typeof messages];
   const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
 
   return (
