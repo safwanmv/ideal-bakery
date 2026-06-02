@@ -130,6 +130,30 @@ export default function Header() {
                   {link.name}
                 </Link>
               ))}
+              
+              {/* Mobile Language Switcher */}
+              <div className="pt-4 border-t border-neutral-100">
+                <p className="text-sm font-semibold text-neutral-500 mb-3">Select Language</p>
+                <div className="grid grid-cols-3 gap-2">
+                  {languages.map((lang) => (
+                    <button
+                      key={lang.code}
+                      onClick={() => {
+                        setLanguage(lang.code as "EN" | "ML" | "KN");
+                        setIsOpen(false);
+                      }}
+                      className={`py-2 px-3 text-sm rounded-xl font-medium transition-all ${
+                        language === lang.code 
+                          ? "bg-primary text-white shadow-md" 
+                          : "bg-neutral-100 text-neutral-700 hover:bg-neutral-200"
+                      }`}
+                    >
+                      {lang.name}
+                    </button>
+                  ))}
+                </div>
+              </div>
+
               <div className="pt-4 border-t border-neutral-100">
                 <Link
                   href="#contact"
