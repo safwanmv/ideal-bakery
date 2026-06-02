@@ -6,19 +6,19 @@ import { motion, Variants } from "framer-motion";
 export default function Testimonials() {
   const testimonials = [
     {
-      content: "I have been buying cakes from Ideal Bakery since I was a kid. Now I buy them for my children's birthdays. The taste and quality have always been consistently excellent.",
-      author: "Rahul S.",
-      role: "Loyal Customer"
+      content: "This is our go-to destination for baked goods in the area! It's an excellent choice for reasonably priced, fresh food and quick service. The staff members are always very polite.",
+      author: "Google Reviewer",
+      role: "Local Guide"
     },
     {
-      content: "We ordered our wedding cake here, and it was stunning! Everyone praised the flavor and the design. Highly recommended for any large event in Kasaragod.",
-      author: "Amina K.",
-      role: "Wedding Customer"
+      content: "They have a wide selection of items, including fresh bread, cakes, chocolates, pastries, and snacks. Highly recommend for any occasion in Chattanchal.",
+      author: "Verified Customer",
+      role: "Google Review"
     },
     {
-      content: "The evening snacks and puffs are my family's favorite. You can really tell they use fresh ingredients. Best bakery in Chattanchal!",
-      author: "Prakash M.",
-      role: "Local Resident"
+      content: "Great place for live cake-making for birthdays! We loved the custom cake they made for us, and the evening snacks are always a family favorite.",
+      author: "Happy Customer",
+      role: "Google Review"
     }
   ];
 
