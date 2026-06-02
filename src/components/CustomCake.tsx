@@ -1,10 +1,22 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function CustomCake() {
+  const { language } = useLanguage();
+
+  const messages = {
+    EN: "Hi Ideal Bakery! I would like to request a custom cake.",
+    ML: "നമസ്കാരം ഐഡിയൽ ബേക്കറി! എനിക്ക് ഒരു കസ്റ്റം കേക്ക് ഓർഡർ ചെയ്യണം.",
+    KN: "ನಮಸ್ಕಾರ ಐಡಿಯಲ್ ಬೇಕರಿ! ನಾನು ಕಸ್ಟಮ್ ಕೇಕ್ ಅನ್ನು ಆರ್ಡರ್ ಮಾಡಲು ಬಯಸುತ್ತೇನೆ."
+  };
+
+  const message = messages[language as keyof typeof messages];
+  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+
   return (
     <section id="custom-cakes" className="py-24 sm:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -38,12 +50,15 @@ export default function CustomCake() {
               </ul>
               
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block mt-10">
-                <Link
-                  href="#contact"
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-white rounded-full shadow-lg px-8 py-4 inline-flex items-center text-base font-bold text-foreground hover:bg-neutral-100 transition-all border border-transparent"
                 >
+                  <MessageCircle className="w-5 h-5 mr-3" />
                   Request Your Custom Cake
-                </Link>
+                </a>
               </motion.div>
             </div>
           </div>

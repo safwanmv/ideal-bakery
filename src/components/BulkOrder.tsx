@@ -1,10 +1,21 @@
 "use client";
 
-import Link from "next/link";
-import { Package } from "lucide-react";
+import { Package, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function BulkOrder() {
+  const { language } = useLanguage();
+
+  const messages = {
+    EN: "Hi Ideal Bakery! I am planning a big event and would like to inquire about a bulk order.",
+    ML: "നമസ്കാരം ഐഡിയൽ ബേക്കറി! ഞാൻ ഒരു വലിയ പരിപാടി പ്ലാൻ ചെയ്യുന്നു, ബൾക്ക് ഓർഡറിനെക്കുറിച്ച് അറിയാൻ ആഗ്രഹിക്കുന്നു.",
+    KN: "ನಮಸ್ಕಾರ ಐಡಿಯಲ್ ಬೇಕರಿ! ನಾನು ದೊಡ್ಡ ಕಾರ್ಯಕ್ರಮವನ್ನು ಆಯೋಜಿಸುತ್ತಿದ್ದೇನೆ ಮತ್ತು ಬಲ್ಕ್ ಆರ್ಡರ್ ಬಗ್ಗೆ ವಿಚಾರಿಸಲು ಬಯಸುತ್ತೇನೆ."
+  };
+
+  const message = messages[language as keyof typeof messages];
+  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+
   return (
     <section id="bulk-orders" className="py-24 sm:py-32 bg-white relative overflow-hidden">
       {/* Background patterns */}
@@ -33,12 +44,15 @@ export default function BulkOrder() {
             From wedding events and birthday parties to school functions, corporate events, and community gatherings—we handle bulk orders with guaranteed timely delivery and uncompromised quality.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
-            <Link
-              href="#contact"
+            <a
+              href={whatsappUrl}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex justify-center items-center px-10 py-4 rounded-full bg-primary text-white font-bold tracking-wide hover:bg-red-800 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95"
             >
+              <MessageCircle className="w-5 h-5 mr-3 fill-current" />
               Enquire Bulk Order
-            </Link>
+            </a>
           </div>
         </motion.div>
       </div>
