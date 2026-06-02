@@ -101,12 +101,12 @@ export default function Footer() {
           <p className="mt-2 md:mt-0">
             Designed & Developed by{" "}
             <a 
-              href="#" 
+              href="https://wa.me/917025849734?text=Hi%20Mohammed%20Safwan!%20I%20saw%20the%20Ideal%20Bakery%20website%20you%20designed%20and%20I%20am%20very%20impressed.%20I%20would%20love%20to%20discuss%20building%20a%20website%20like%20that%20for%20my%20business."
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-primary hover:text-white transition-colors font-medium"
             >
-              Your Name
+              Mohammed Safwan.MV
             </a>
           </p>
         </div>
