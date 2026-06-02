@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-neutral-900 text-neutral-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          
+
           {/* Brand & About */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white tracking-tight">Ideal Bakery</h3>
@@ -74,10 +74,10 @@ export default function Footer() {
                 <Phone className="w-5 h-5 text-primary shrink-0" />
                 <span>+91 98765 43210</span>
               </li>
-              <li className="flex items-center space-x-3">
+              {/* <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
                 <span>hello@idealbakery.com</span>
-              </li>
+              </li> */}
             </ul>
             <div className="mt-6">
               <a
@@ -93,7 +93,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      
+
       {/* Copyright */}
       <div className="border-t border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500">
