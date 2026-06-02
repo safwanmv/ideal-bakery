@@ -98,7 +98,17 @@ export default function Footer() {
       <div className="border-t border-neutral-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500">
           <p>&copy; {new Date().getFullYear()} Ideal Bakery. All rights reserved.</p>
-          <p className="mt-2 md:mt-0">Built with trusted quality.</p>
+          <p className="mt-2 md:mt-0">
+            Designed & Developed by{" "}
+            <a 
+              href="#" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-primary hover:text-white transition-colors font-medium"
+            >
+              Your Name
+            </a>
+          </p>
         </div>
       </div>
     </footer>
