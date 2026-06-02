@@ -96,7 +96,7 @@ export default function Footer() {
 
       {/* Copyright */}
       <div className="border-t border-neutral-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 pb-24 md:pb-6 flex flex-col md:flex-row justify-between items-center text-sm text-neutral-500 text-center md:text-left">
           <p>&copy; {new Date().getFullYear()} Ideal Bakery. All rights reserved.</p>
           <p className="mt-2 md:mt-0">
             Designed & Developed by{" "}
