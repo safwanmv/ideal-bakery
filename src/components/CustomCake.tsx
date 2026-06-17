@@ -72,11 +72,12 @@ export default function CustomCake() {
               className="absolute inset-0 transform translate-x-6 translate-y-6 sm:translate-x-16 lg:translate-y-20 lg:translate-x-10 rounded-tl-[3rem] overflow-hidden shadow-2xl"
             >
               <Image
-                src="/images/birthday-cake.png"
-                alt="Custom Birthday Cake"
+                src="/images/real/store_inside1.jpeg"
+                alt="Inside Ideal Bakery"
                 fill
-                className="object-cover"
+                className="object-cover contrast-[1.1] saturate-[1.1]"
               />
+              <div className="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
             </motion.div>
           </div>
         </motion.div>

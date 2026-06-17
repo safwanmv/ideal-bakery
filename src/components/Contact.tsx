@@ -15,7 +15,7 @@ export default function Contact() {
 
   const message = messages[language as keyof typeof messages];
   const whatsappMessage = encodeURIComponent(message);
-  const whatsappUrl = `https://wa.me/919876543210?text=${whatsappMessage}`;
+  const whatsappUrl = `https://wa.me/08156857777?text=${whatsappMessage}`;
 
   return (
     <section id="contact" className="py-24 sm:py-32 bg-[#fafafa]">
@@ -88,7 +88,7 @@ export default function Contact() {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div className="ml-6">
-                    <p className="text-lg font-bold text-foreground">+91 98765 43210</p>
+                    <p className="text-lg font-bold text-foreground">08156857777</p>
                   </div>
                 </div>
 

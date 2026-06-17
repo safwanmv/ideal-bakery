@@ -5,10 +5,10 @@ import { motion } from "framer-motion";
 
 export default function Gallery() {
   const images = [
-    { src: "/images/hero-bakery.png", alt: "Storefront and Fresh Bakes" },
-    { src: "/images/wedding-cake.png", alt: "Elegant Wedding Cake" },
-    { src: "/images/birthday-cake.png", alt: "Custom Birthday Cake" },
-    { src: "/images/bakery-snacks.png", alt: "Fresh Evening Snacks" },
+    { src: "/images/real/store_front.jpeg", alt: "Storefront" },
+    { src: "/images/real/store_inside1.jpeg", alt: "Bakery Interiors" },
+    { src: "/images/real/photo1.jpeg", alt: "Fresh Assortment" },
+    { src: "/images/real/jalebi.jpeg", alt: "Delicious Sweets" },
   ];
 
   return (
@@ -39,7 +39,7 @@ export default function Gallery() {
                 src={img.src}
                 alt={img.alt}
                 fill
-                className="object-cover transition-transform duration-700 group-hover:scale-105"
+                className="object-cover transition-transform duration-700 group-hover:scale-105 contrast-[1.1] saturate-[1.1]"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">

@@ -26,11 +26,12 @@ export default function About() {
           >
             <div className="relative h-[400px] sm:h-[600px] w-full lg:w-11/12 rounded-[2.5rem] overflow-hidden shadow-2xl">
               <Image
-                src="/images/bakery-snacks.png"
+                src="/images/real/jalebi.jpeg"
                 alt="Fresh Traditional Bakery Snacks"
                 fill
-                className="object-cover hover:scale-105 transition-transform duration-700"
+                className="object-cover hover:scale-105 transition-transform duration-700 contrast-[1.1] saturate-[1.2]"
               />
+              <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/20 to-transparent pointer-events-none mix-blend-overlay"></div>
             </div>
             {/* Floating accent block */}
             <div className="absolute -bottom-10 -right-4 lg:-right-10 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-neutral-100 max-w-xs">

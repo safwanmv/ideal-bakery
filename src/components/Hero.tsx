@@ -61,13 +61,13 @@ export default function Hero() {
             className="relative lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/hero-bakery.png"
-              alt="Ideal Bakery Display"
+              src="/images/real/store_front.jpeg"
+              alt="Ideal Bakery Store Front"
               fill
-              className="object-cover"
+              className="object-cover contrast-[1.1] saturate-[1.2]"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/10 mix-blend-multiply"></div>
           </motion.div>
 
         </div>
