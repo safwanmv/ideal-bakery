@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl"
+            className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl"
           >
             <Image
               src="/images/real/store_front.jpeg"

@@ -24,16 +24,16 @@ export default function Gallery() {
             A Glimpse of Perfection.
           </h2>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
           {images.map((img, i) => (
-            <motion.div 
-              key={i} 
+            <motion.div
+              key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className={`relative rounded-[2rem] overflow-hidden group shadow-[0_8px_30px_rgb(0,0,0,0.04)] ${i === 0 || i === 3 ? "md:col-span-2 md:h-96" : "md:h-96"}`}
+              className={`relative h-64 sm:h-80 rounded-[2rem] overflow-hidden group shadow-[0_8px_30px_rgb(0,0,0,0.04)] ${i === 0 || i === 3 ? "md:col-span-2 md:h-96" : "md:h-96"}`}
             >
               <Image
                 src={img.src}
