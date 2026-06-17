@@ -14,10 +14,10 @@ export default function FloatingWhatsApp() {
   };
 
   const message = messages[language as keyof typeof messages];
-  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/9181568 57777?text=${encodeURIComponent(message)}`;
 
   return (
-    <motion.div 
+    <motion.div
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ type: "spring", stiffness: 260, damping: 20, delay: 1 }}
@@ -35,7 +35,7 @@ export default function FloatingWhatsApp() {
           <span className="relative inline-flex rounded-full h-4 w-4 bg-red-500 border-2 border-white"></span>
         </span>
         <MessageCircle className="w-7 h-7 fill-current" />
-        
+
         {/* Tooltip */}
         <span className="absolute right-full mr-4 bg-white text-neutral-800 text-sm font-semibold px-4 py-2 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap border border-neutral-100">
           Chat with us

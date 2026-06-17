@@ -15,12 +15,12 @@ export default function CustomCake() {
   };
 
   const message = messages[language as keyof typeof messages];
-  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/9181568 57777?text=${encodeURIComponent(message)}`;
 
   return (
     <section id="custom-cakes" className="py-24 sm:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -29,7 +29,7 @@ export default function CustomCake() {
         >
           {/* Background Abstract Glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl pointer-events-none mix-blend-screen" />
-          
+
           <div className="relative z-10 pt-16 pb-20 px-8 sm:pt-20 sm:px-16 lg:py-24 lg:pr-0 xl:py-28 xl:px-20">
             <div className="lg:self-center max-w-lg">
               <div className="inline-flex items-center space-x-2 text-white/60 font-bold tracking-widest uppercase text-xs mb-6">
@@ -42,13 +42,13 @@ export default function CustomCake() {
               <p className="mt-6 text-lg leading-relaxed text-neutral-300">
                 Make your celebration unforgettable with a personalized cake. Whether it&#39;s a themed birthday, an elegant wedding cake, or an anniversary surprise, our master bakers will bring your vision to life.
               </p>
-              
+
               <ul className="mt-8 space-y-4 text-neutral-200 font-medium">
                 <li className="flex items-center space-x-3"><span className="text-primary">✦</span> <span>Personalized themes and designs</span></li>
                 <li className="flex items-center space-x-3"><span className="text-primary">✦</span> <span>Birthday, Wedding & Anniversary Cakes</span></li>
                 <li className="flex items-center space-x-3"><span className="text-primary">✦</span> <span>Premium, locally-sourced ingredients</span></li>
               </ul>
-              
+
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }} className="inline-block mt-10">
                 <a
                   href={whatsappUrl}
@@ -62,7 +62,7 @@ export default function CustomCake() {
               </motion.div>
             </div>
           </div>
-          
+
           <div className="relative -mt-6 sm:-mt-10 aspect-square md:aspect-[4/3] lg:mt-0 lg:aspect-auto">
             <motion.div
               initial={{ opacity: 0, scale: 0.9, rotate: -5 }}

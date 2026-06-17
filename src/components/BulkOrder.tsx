@@ -14,7 +14,7 @@ export default function BulkOrder() {
   };
 
   const message = messages[language as keyof typeof messages];
-  const whatsappUrl = `https://wa.me/919876543210?text=${encodeURIComponent(message)}`;
+  const whatsappUrl = `https://wa.me/9181568 57777?text=${encodeURIComponent(message)}`;
 
   return (
     <section id="bulk-orders" className="py-24 sm:py-32 bg-white relative overflow-hidden">
@@ -23,7 +23,7 @@ export default function BulkOrder() {
       <div className="absolute -right-40 bottom-0 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -32,11 +32,11 @@ export default function BulkOrder() {
         >
           {/* Internal Glow */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gradient-to-r from-primary/20 via-transparent to-primary/20 blur-3xl pointer-events-none" />
-          
+
           <div className="relative z-10 mx-auto h-20 w-20 bg-primary/20 rounded-2xl flex items-center justify-center mb-8 rotate-3">
             <Package className="h-10 w-10 text-primary -rotate-3" />
           </div>
-          
+
           <h2 className="text-4xl font-extrabold text-white sm:text-5xl tracking-tighter">
             Planning a Big Event?
           </h2>
