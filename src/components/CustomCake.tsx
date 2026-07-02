@@ -69,7 +69,7 @@ export default function CustomCake() {
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="absolute inset-0 transform translate-x-2 translate-y-6 sm:translate-x-16 lg:translate-y-20 lg:translate-x-10 rounded-tl-[3rem] overflow-hidden shadow-2xl"
+              className="absolute inset-0 transform translate-x-2 translate-y-6 sm:translate-x-16 lg:translate-y-20 lg:translate-x-10 rounded-tl-[3rem] overflow-hidden shadow-2xl bg-neutral-100"
             >
               <Image
                 src="/images/real/store_inside1.jpeg"
@@ -77,7 +77,7 @@ export default function CustomCake() {
                 fill
                 className="object-cover contrast-[1.1] saturate-[1.1]"
               />
-              <div className="absolute inset-0 bg-black/10 mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
             </motion.div>
           </div>
         </motion.div>

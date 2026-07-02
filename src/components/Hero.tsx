@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative h-[300px] sm:h-[400px] lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl mt-4 lg:mt-0"
+            className="relative h-[300px] sm:h-[400px] lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl mt-4 lg:mt-0 bg-neutral-100"
           >
             <Image
               src="/images/real/store_front.jpeg"
@@ -67,7 +67,7 @@ export default function Hero() {
               className="object-cover contrast-[1.1] saturate-[1.2]"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-black/10 mix-blend-multiply"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none"></div>
           </motion.div>
 
         </div>

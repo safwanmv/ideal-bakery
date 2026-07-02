@@ -24,14 +24,14 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="mb-20 lg:mb-0 relative"
           >
-            <div className="relative h-[300px] sm:h-[600px] w-full lg:w-11/12 rounded-[2.5rem] overflow-hidden shadow-2xl">
+            <div className="relative h-[300px] sm:h-[600px] w-full lg:w-11/12 rounded-[2.5rem] overflow-hidden shadow-2xl bg-neutral-100">
               <Image
                 src="/images/real/jalebi.jpeg"
                 alt="Fresh Traditional Bakery Snacks"
                 fill
                 className="object-cover hover:scale-105 transition-transform duration-700 contrast-[1.1] saturate-[1.2]"
               />
-              <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/20 to-transparent pointer-events-none mix-blend-overlay"></div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-black/20 to-transparent pointer-events-none"></div>
             </div>
             {/* Floating accent block */}
             <div className="absolute -bottom-10 -right-2 sm:-right-4 lg:-right-10 bg-white p-4 sm:p-8 rounded-3xl shadow-xl border border-neutral-100 max-w-[calc(100%-2rem)] sm:max-w-xs">
