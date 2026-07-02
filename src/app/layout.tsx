@@ -23,8 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} h-full scroll-smooth antialiased`}>
-      <body className="min-h-full flex flex-col font-sans selection:bg-primary/20 selection:text-primary">
+    <html lang="en" className={`${inter.variable} h-full scroll-smooth antialiased overflow-x-hidden`}>
+      <body className="min-h-full flex flex-col font-sans selection:bg-primary/20 selection:text-primary overflow-x-hidden w-full">
         <LanguageProvider>
           <Header />
           <main className="flex-grow">{children}</main>
