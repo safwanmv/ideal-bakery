@@ -30,12 +30,12 @@ export default function CustomCake() {
           {/* Background Abstract Glow */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-primary/30 rounded-full blur-3xl pointer-events-none mix-blend-screen" />
 
-          <div className="relative z-10 pt-16 pb-20 px-8 sm:pt-20 sm:px-16 lg:py-24 lg:pr-0 xl:py-28 xl:px-20">
+          <div className="relative z-10 pt-16 pb-20 px-6 sm:pt-20 sm:px-16 lg:py-24 lg:pr-0 xl:py-28 xl:px-20">
             <div className="lg:self-center max-w-lg">
               <div className="inline-flex items-center space-x-2 text-white/60 font-bold tracking-widest uppercase text-xs mb-6">
                 <span>Dream it. We bake it.</span>
               </div>
-              <h2 className="text-4xl font-extrabold text-white sm:text-5xl leading-tight tracking-tight">
+              <h2 className="text-3xl font-extrabold text-white sm:text-4xl md:text-5xl leading-tight tracking-tight">
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white to-white/70">Custom Cake</span>
                 <span className="block mt-2 font-serif italic font-light">Specialists.</span>
               </h2>
@@ -54,7 +54,7 @@ export default function CustomCake() {
                   href={whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-white rounded-full shadow-lg px-8 py-4 inline-flex items-center text-base font-bold text-foreground hover:bg-neutral-100 transition-all border border-transparent"
+                  className="bg-white rounded-full shadow-lg px-6 py-4 inline-flex items-center text-sm sm:text-base font-bold text-foreground hover:bg-neutral-100 transition-all border border-transparent"
                 >
                   <MessageCircle className="w-5 h-5 mr-3" />
                   Request Your Custom Cake
@@ -69,7 +69,7 @@ export default function CustomCake() {
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ duration: 1, delay: 0.3 }}
-              className="absolute inset-0 transform translate-x-6 translate-y-6 sm:translate-x-16 lg:translate-y-20 lg:translate-x-10 rounded-tl-[3rem] overflow-hidden shadow-2xl"
+              className="absolute inset-0 transform translate-x-2 translate-y-6 sm:translate-x-16 lg:translate-y-20 lg:translate-x-10 rounded-tl-[3rem] overflow-hidden shadow-2xl"
             >
               <Image
                 src="/images/real/store_inside1.jpeg"

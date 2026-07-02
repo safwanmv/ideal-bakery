@@ -37,10 +37,10 @@ export default function BulkOrder() {
             <Package className="h-10 w-10 text-primary -rotate-3" />
           </div>
 
-          <h2 className="text-4xl font-extrabold text-white sm:text-5xl tracking-tighter">
+          <h2 className="text-3xl font-extrabold text-white sm:text-4xl md:text-5xl tracking-tighter">
             Planning a Big Event?
           </h2>
-          <p className="mt-6 max-w-2xl text-xl text-neutral-400 mx-auto leading-relaxed">
+          <p className="mt-4 sm:mt-6 max-w-2xl text-lg sm:text-xl text-neutral-400 mx-auto leading-relaxed">
             From wedding events and birthday parties to school functions, corporate events, and community gatherings—we handle bulk orders with guaranteed timely delivery and uncompromised quality.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
@@ -48,7 +48,7 @@ export default function BulkOrder() {
               href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex justify-center items-center px-10 py-4 rounded-full bg-primary text-white font-bold tracking-wide hover:bg-red-800 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95"
+              className="inline-flex justify-center items-center px-8 py-3 sm:px-10 sm:py-4 rounded-full bg-primary text-white font-bold tracking-wide hover:bg-red-800 transition-all shadow-xl shadow-primary/20 hover:scale-105 active:scale-95 text-sm sm:text-base"
             >
               <MessageCircle className="w-5 h-5 mr-3 fill-current" />
               Enquire Bulk Order

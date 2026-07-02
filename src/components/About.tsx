@@ -22,9 +22,9 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="mb-16 lg:mb-0 relative"
+            className="mb-20 lg:mb-0 relative"
           >
-            <div className="relative h-[400px] sm:h-[600px] w-full lg:w-11/12 rounded-[2.5rem] overflow-hidden shadow-2xl">
+            <div className="relative h-[300px] sm:h-[600px] w-full lg:w-11/12 rounded-[2.5rem] overflow-hidden shadow-2xl">
               <Image
                 src="/images/real/jalebi.jpeg"
                 alt="Fresh Traditional Bakery Snacks"
@@ -34,7 +34,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-tr from-amber-900/20 to-transparent pointer-events-none mix-blend-overlay"></div>
             </div>
             {/* Floating accent block */}
-            <div className="absolute -bottom-10 -right-4 lg:-right-10 bg-white p-6 sm:p-8 rounded-3xl shadow-xl border border-neutral-100 max-w-xs">
+            <div className="absolute -bottom-10 -right-2 sm:-right-4 lg:-right-10 bg-white p-4 sm:p-8 rounded-3xl shadow-xl border border-neutral-100 max-w-[calc(100%-2rem)] sm:max-w-xs">
               <div className="flex items-center space-x-4">
                 <div className="h-16 w-16 bg-red-50 text-primary flex items-center justify-center rounded-2xl shrink-0">
                   <span className="text-2xl font-bold">25+</span>
@@ -56,10 +56,10 @@ export default function About() {
               <span className="w-8 h-px bg-primary/50"></span>
               <span>Our Story</span>
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tighter text-foreground leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-foreground leading-tight">
               A Legacy of Taste in Chattanchal.
             </h2>
-            <p className="mt-6 text-lg text-neutral-500 leading-relaxed">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-neutral-500 leading-relaxed">
               Since our opening over two decades ago, Ideal Bakery has been more than just a place to buy bread. We are woven into the very fabric of the Chattanchal community&#39;s daily life and most cherished celebrations.
             </p>
             <p className="mt-4 text-lg text-neutral-500 leading-relaxed">

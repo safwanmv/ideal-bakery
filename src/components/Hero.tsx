@@ -12,8 +12,8 @@ export default function Hero() {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-[30rem] h-[30rem] bg-secondary/10 rounded-full blur-3xl" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-32 pb-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full pt-24 md:pt-32 pb-16 md:pb-20">
+        <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           
           {/* Text Content */}
           <motion.div 
@@ -27,16 +27,16 @@ export default function Hero() {
               <span className="text-xs font-medium tracking-wide text-neutral-600 uppercase">Est. 1999</span>
             </div>
             
-            <h1 className="text-5xl lg:text-7xl font-bold tracking-tighter text-foreground leading-[1.1]">
-              Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">Memories</span><br />
-              Since 1999.
+            <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-foreground leading-[1.1]">
+              Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">Memories</span><br className="hidden sm:block" />
+              <span className="sm:hidden"> </span>Since 1999.
             </h1>
             
-            <p className="mt-6 text-lg text-neutral-500 leading-relaxed max-w-xl">
+            <p className="mt-4 sm:mt-6 text-base sm:text-lg text-neutral-500 leading-relaxed max-w-xl">
               Elevating the art of baking. Experience our signature cakes, artisanal breads, and delightful pastries, baked fresh daily in Chattanchal.
             </p>
             
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">
               <Link
                 href="#custom-cakes"
                 className="inline-flex justify-center items-center px-8 py-4 rounded-full bg-foreground text-white font-medium hover:bg-neutral-800 transition-all shadow-xl shadow-neutral-900/10 hover:scale-105 active:scale-95"
@@ -58,7 +58,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-            className="relative h-[400px] sm:h-[500px] lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl"
+            className="relative h-[300px] sm:h-[400px] lg:h-[600px] w-full rounded-[2rem] overflow-hidden shadow-2xl mt-4 lg:mt-0"
           >
             <Image
               src="/images/real/store_front.jpeg"
