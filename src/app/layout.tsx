@@ -12,9 +12,36 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ideal Bakery - Freshly Baked Memories for Over 25 Years",
-  description: "Ideal Bakery in Chattanchal, Kasaragod. Trusted by generations for cakes, snacks, bakery favorites, and custom celebrations.",
-  keywords: ["Ideal Bakery Chattanchal", "Bakery in Kasaragod", "Best Cakes in Kasaragod", "Custom Cakes in Kasaragod", "Birthday Cakes in Kasaragod"],
+  title: {
+    default: "Ideal Bakery | Best Bakery in Kasaragod",
+    template: "%s | Ideal Bakery"
+  },
+  description: "Discover Ideal Bakery in Chattanchal, Kasaragod. Known as the best bakery for custom cakes, tasty snacks, and freshly baked memories since 1999.",
+  keywords: [
+    "best bakery in kasaragod", 
+    "tasty bakery kasaragod", 
+    "Ideal Bakery Chattanchal", 
+    "custom cakes kasaragod", 
+    "birthday cakes kasaragod", 
+    "fresh bakery items",
+    "wedding cakes kasaragod",
+    "best cakes in chattanchal"
+  ],
+  authors: [{ name: "Ideal Bakery" }],
+  creator: "Ideal Bakery",
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: "https://idealbakery.com", // Replace with actual domain when live
+    title: "Ideal Bakery | Best Bakery in Kasaragod",
+    description: "Discover Ideal Bakery in Chattanchal, Kasaragod. Known as the best bakery for custom cakes, tasty snacks, and freshly baked memories since 1999.",
+    siteName: "Ideal Bakery",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ideal Bakery | Best Bakery in Kasaragod",
+    description: "Discover Ideal Bakery in Chattanchal, Kasaragod. Known as the best bakery for custom cakes, tasty snacks, and freshly baked memories since 1999.",
+  },
 };
 
 export default function RootLayout({

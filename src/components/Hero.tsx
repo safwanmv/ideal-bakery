@@ -28,12 +28,12 @@ export default function Hero() {
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tighter text-foreground leading-[1.1]">
-              Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">Memories</span><br className="hidden sm:block" />
-              <span className="sm:hidden"> </span>Since 1999.
+              Kasaragod's Best <br className="hidden sm:block" />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">Bakery</span> Since 1999.
             </h1>
             
             <p className="mt-4 sm:mt-6 text-base sm:text-lg text-neutral-500 leading-relaxed max-w-xl">
-              Elevating the art of baking. Experience our signature cakes, artisanal breads, and delightful pastries, baked fresh daily in Chattanchal.
+              Elevating the art of baking. Experience our signature custom cakes, artisanal breads, and tasty pastries, baked fresh daily in Chattanchal.
             </p>
             
             <div className="mt-8 sm:mt-10 flex flex-col sm:flex-row gap-4">

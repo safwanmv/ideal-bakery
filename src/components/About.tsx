@@ -57,13 +57,13 @@ export default function About() {
               <span>Our Story</span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tighter text-foreground leading-tight">
-              A Legacy of Taste in Chattanchal.
+              A Legacy of Taste in Kasaragod.
             </h2>
             <p className="mt-4 sm:mt-6 text-base sm:text-lg text-neutral-500 leading-relaxed">
-              Since our opening over two decades ago, Ideal Bakery has been more than just a place to buy bread. We are woven into the very fabric of the Chattanchal community&#39;s daily life and most cherished celebrations.
+              Since our opening over two decades ago, Ideal Bakery has been more than just a place to buy bread. We are woven into the very fabric of the Chattanchal and Kasaragod community&#39;s daily life and most cherished celebrations, earning our reputation as the best bakery in town.
             </p>
             <p className="mt-4 text-lg text-neutral-500 leading-relaxed">
-              We take immense pride in our traditional recipes while constantly innovating to bring you the best cakes, snacks, and authentic bakery items.
+              We take immense pride in our traditional recipes while constantly innovating to bring you the finest custom cakes, tasty snacks, and authentic bakery items.
             </p>
             
             <div className="mt-10 grid sm:grid-cols-2 gap-4">
