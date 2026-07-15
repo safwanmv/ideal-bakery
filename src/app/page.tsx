@@ -14,7 +14,7 @@ export default function Home() {
     "@type": ["Bakery", "LocalBusiness"],
     "name": "Ideal Bakery",
     "description": "The best bakery in Kasaragod, serving custom cakes, tasty snacks, and freshly baked goods since 1999.",
-    "url": "https://idealbakery.com", // Update when live
+    "url": "https://ideal-bakery.vercel.app", // Update when live
     "telephone": "+919037375217", // Replace with real number if available
     "address": {
       "@type": "PostalAddress",

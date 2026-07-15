@@ -18,11 +18,11 @@ export const metadata: Metadata = {
   },
   description: "Discover Ideal Bakery in Chattanchal, Kasaragod. Known as the best bakery for custom cakes, tasty snacks, and freshly baked memories since 1999.",
   keywords: [
-    "best bakery in kasaragod", 
-    "tasty bakery kasaragod", 
-    "Ideal Bakery Chattanchal", 
-    "custom cakes kasaragod", 
-    "birthday cakes kasaragod", 
+    "best bakery in kasaragod",
+    "tasty bakery kasaragod",
+    "Ideal Bakery Chattanchal",
+    "custom cakes kasaragod",
+    "birthday cakes kasaragod",
     "fresh bakery items",
     "wedding cakes kasaragod",
     "best cakes in chattanchal"
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://idealbakery.com", // Replace with actual domain when live
+    url: "https://ideal-bakery.vercel.app", // Replace with actual domain when live
     title: "Ideal Bakery | Best Bakery in Kasaragod",
     description: "Discover Ideal Bakery in Chattanchal, Kasaragod. Known as the best bakery for custom cakes, tasty snacks, and freshly baked memories since 1999.",
     siteName: "Ideal Bakery",

@@ -76,7 +76,7 @@ export default function Footer() {
               </li>
               {/* <li className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span>hello@idealbakery.com</span>
+                <span>hello@ideal-bakery.vercel.app</span>
               </li> */}
             </ul>
             <div className="mt-6">
@@ -100,10 +100,10 @@ export default function Footer() {
           <p>&copy; {new Date().getFullYear()} Ideal Bakery. All rights reserved.</p>
           <p className="mt-3 md:mt-0 leading-relaxed">
             Designed & Developed by <br className="md:hidden" />
-            <a 
+            <a
               href="https://wa.me/917025849734?text=Hi%20Mohammed%20Safwan!%20I%20saw%20the%20Ideal%20Bakery%20website%20you%20designed%20and%20I%20am%20very%20impressed.%20I%20would%20love%20to%20discuss%20building%20a%20website%20like%20that%20for%20my%20business."
-              target="_blank" 
-              rel="noopener noreferrer" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-primary hover:text-white transition-colors font-medium"
             >
               Mohammed Safwan.MV
